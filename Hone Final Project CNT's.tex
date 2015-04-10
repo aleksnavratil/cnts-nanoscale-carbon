@@ -1,0 +1,495 @@
+\documentclass[12pt,letterpaper]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage[position=b]{subcaption}
+\usepackage{float}%put my figures exactly where I want em
+\usepackage{grffile}%fix the filenames appearing above images because of spaces in the name
+\usepackage[]{microtype}
+\DeclareUnicodeCharacter{00A0}{ }
+
+\graphicspath{ {./figures/} }
+\title{A Review of Nanoscale Carbon as a Filler in Polymer-Matrix Composites}
+\author{Aleks Navratil \\ Hone CNT's Class Fall 2013 \\ Columbia University \\ Department of Mechanical Engineering \vspace{-1.5cm}}
+\titlegraphic{Follow along on your mobile device or check references later. Source code, .pdf, and bibliography database are available. Scan here:\\ \includegraphics[scale=.35]{qr}\\
+\tiny{https://dl.dropboxusercontent.com/u/28347262/Hone\%20Final\%20Project\%20CNT's.pdf}
+}
+
+\date{}
+\subtitle[tribo]{For Tribomechanical Systems}
+
+%%This code makes the outline appear at every section break and highlights the current section%%
+\AtBeginSection[] { 
+  \begin{frame}[plain] 
+    \frametitle{Outline} 
+    \tableofcontents[currentsection] 
+  \end{frame} 
+  \addtocounter{framenumber}{-1} 
+} 
+%%This code does the same thing for subsections. possibly unnecessary%%
+\AtBeginSubsection[] { 
+  \begin{frame}[plain] 
+   \frametitle{Outline} 
+    \tableofcontents[currentsubsection] 
+    \addtocounter{framenumber}{-1} 
+  \end{frame} 
+}
+\bibliographystyle{plain}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section{Introduction and Motivation}
+\subsection{}
+
+\begin{frame}{Introduction}
+\begin{itemize}
+\item Development and testing of composite materials is a longstanding research area in tribology
+
+\item Properties of composites:
+\begin{itemize}
+\item Light weight
+
+\item High strength
+
+\item Low cost
+
+\item Good triboproperties
+
+\begin{itemize}
+\item Friction
+\item Wear
+\item Lubricant wetting
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Introduction}
+\begin{itemize}
+\item Many tribosystems operate in the boundary lubrication regime because of unfriendly conditions
+\begin{itemize}
+\item Temperature extremes
+\item Chemical interactions
+\item Severe geometric constraints
+\end{itemize}
+\item No hydrodynamic lubrication possible under these conditions
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Introduction}
+Composite surfaces are common in many industries:
+\begin{itemize}
+\item Electronics
+\item Aerospace
+\item Power generation
+\item Automotive
+\end{itemize}
+\end{frame}
+
+\section{Background}
+
+\begin{frame}{Background}
+What are composites?
+\begin{itemize}
+\item A light matrix material, which dominates composition by volume.
+\begin{itemize}
+\item PTFE
+\item Thermosetting polymer aka epoxies
+\item Others
+\end{itemize}
+\item A high-strength filler material, which is dispersed in the matrix
+\begin{itemize}
+\item Graphene
+\item CNT's
+\item Nanodiamonds
+\item Others
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Examples of well-known composites}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+     \begin{block}{}
+\begin{itemize}
+\item Fibreglass
+\item Carbon fiber
+\item Reinforced concrete
+\item Oriented strand board
+\end{itemize}    
+    \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+    \begin{block}{}
+% Your image included here
+\includegraphics[width=\textwidth]{audi}
+\vspace{1cm}
+\includegraphics[width=\textwidth]{canoe}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{In the old days: Microscale fillers}
+\begin{itemize}
+\item Microscale fillers in polymer matrices have been shown to reduce wear rates by one or two orders of magnitude. \cite{Lancaster1968549,Tanaka1982221}
+\item Polymer tribology is dominated by viscoelasticity and transfer films \cite{bahadur2000development, liu_situ_2012, kragelski1965friction}
+\item Possible mechanisms of wear supression:
+\begin{itemize}
+\item Wear rate limited by strength of composite's transfer film onto counterface \cite{Briscoe197799,ye2012transfer}
+\item Presence of fillers reduces average size of wear debris to inhibit wear \cite{Bahadur19841, Blanchet1992229, Ricklin1977487}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Transfer-film evolution in a PTFE composite}
+\begin{figure}
+  \centering
+    \includegraphics[width=.75\textwidth]{transfer film evolution}
+    \caption[Time map of transfer film evolution from PTFE on steel]{A representative time-map of transfer film evolution through the running in, transition, and steady-state wear regimes in linear-sliding PTFE-matrix wear against a steel counterface.}
+     \label{fig:transfer_films}
+\end{figure}
+\end{frame}
+
+\section{Present Research: Nanoscale Fillers}
+
+\begin{frame}{Nanofillers background}
+  \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+% Your image included here
+\includegraphics[width=\textwidth]{cnt}
+    \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+     \begin{block}{}
+\begin{itemize}
+\item Logical continuation of microfiller work from past decades
+\item Possibility of improved material properties and performance
+\item Carbon nanofillers are particularly promising
+\begin{itemize}
+\item Graphene
+\item CNT's
+\item Nanodiamonds
+\item Novel fullerenes
+\end{itemize}
+\end{itemize}   
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Nanofillers in PTFE}
+
+\begin{frame}{PTFE matrix composites}
+\begin{itemize}
+\item Plenty of research on PTFE matrix composites \cite{mcelwain2008effect, burris2006improved,Burris2009653,chen_tribological_2003}
+\item PTFE has low friction but high wear
+\item Many efforts to reduce wear via composite loading
+\begin{itemize}
+\item Carbon fillers
+\item Aluminum fillers
+\item Nano-silicas and others
+\end{itemize}
+\item Wear reductions as high as one or two orders of magnitude \cite{MAME200600416,Lai2004916,Blanchet201011,sawyer2003study}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PTFE matrix composites}
+\begin{itemize}
+\item The following images show representative micrographs of graphene's morphology in and out of a PTFE matrix. 
+\item Other approaches have also borne fruit, including nanolayered metal-graphene composites
+\begin{itemize}
+\item Strengths as high as 4.0 GPa
+\item Demonstrating graphene's unusually high ability to impede dislocation progagation. \cite{kim2013strengthening}
+\end{itemize} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Graphene Composites in pictures}
+  \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+% Your image included here
+        \begin{figure}
+                \includegraphics[width=\textwidth]{hi res sem}
+                \caption{A high-resolution SEM image showing the microstructure of a graphene-loaded PTFE composite (2\% by mass load fraction.) The inset image shows the rippling edges of graphene platelets.}
+                \label{fig:hi_res_sem}
+        \end{figure}
+        \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+     \begin{block}{}
+        \begin{figure}
+                \includegraphics[width=\textwidth]{tem graphene on grid}
+                \caption{A graphene platelet deposited on an ordinary TEM grid. Note the low opacity of the platelet, even in the non-monolayer regions. The unlabeled scale bar is $.5 \mu$m.}
+                \label{fig:graphene_on_grid}
+        \end{figure}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\subsection{Thermosetting Polymer Matrices}
+
+\begin{frame}{Thermosetting Polymer Matrices}
+
+
+
+  \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+% Your image included here
+        \begin{figure}
+                \includegraphics[width=\textwidth]{fracture toughness}
+                \caption{Fracture toughness improvements in several composites.}
+        \end{figure}
+        \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+     \begin{block}{}
+\begin{itemize}
+\item In epoxy composites, nanoscale fillers including graphene, CNT's, and layered silicates have been shown to improve properties significantly: \cite{blackman2007fracture,Salahuddin20021477,Yasmin20062415}
+\begin{itemize}
+\item Toughness
+\item Elastic modulus
+\item Hardness
+\end{itemize}
+\item Fracture toughness in particular is commonly improved by the introduction of CNT fillers. \cite{Lachman20101093}
+\end{itemize} 
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Possible Mechanism of Toughness Improvement}
+\begin{figure}[]
+  \centering
+    \includegraphics[width=.75\textwidth]{cnt crack}
+    \caption[Micrograph of a CNT bridging a microcrack in a thermoset]{An SEM micrograph showing a CNT bridging a developing subsurface microcrack in a thermosetting polymer matrix.}
+\end{figure}
+\end{frame}
+
+
+\subsection{Other Matrices}
+
+\begin{frame}{Other Matrices}
+
+
+  \begin{columns}[T]
+      \begin{column}{.3\textwidth}
+     \begin{block}{}
+        \begin{figure}
+                \includegraphics[width=\textwidth]{friction plot}
+                \caption{Friction is often reduced with increasing filler load.}
+        \end{figure}
+    \end{block}
+    \end{column}  
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+\begin{itemize}
+\item Other polymeric matrices have also been loaded with nanoscale carbon fillers \cite{song2012preparation, li2012preparation}
+\item Significant tribological and mechanical improvements have been reported
+\begin{itemize}
+\item Coefficient-of-friction reductions of more than 90\% at high loading fractions 
+\item Reductions in specific wear coefficient of up to an order of magnitude \cite{balazsi2010tribology, pan2012wear,ren2013influence}
+\end{itemize} 
+\end{itemize}
+        \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Performance Limits}
+  \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+\begin{itemize}
+\item However, friction in monolayer graphene has been shown to depend upon the degree mechanical confinement to the substrate in the system. \cite{PSSB:PSSB201000555}
+\item Graphene's frictional behavior has also been shown to depend upon number of layers. \cite{PSSB:PSSB200982329} 
+\end{itemize}
+        \end{block}
+    \end{column}
+    \begin{column}{.3\textwidth}
+     \begin{block}{}
+        \begin{figure}
+                \includegraphics[width=\textwidth]{graphene friction}
+                \caption{Layer-dependence in graphene CoF.}
+        \end{figure}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{AFM Images of Graphene}
+\begin{figure}
+  \centering
+    \includegraphics[width=.9\textwidth]{afm}
+    \caption[Tapping-mode AFM images of functionalized graphene]{Atomic force microscope images showing a plan-view of functionalized graphene. (a) is ordinary functionalized graphene, (b) is a proprietary (somewhat thicker) modified graphene. The inset images show cross-sectional height changes.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Dispersion Dependence}
+\begin{itemize}
+\item As dispersion quality rises, property improvements are magnified.
+\item However, present dispersion techniques rely on expensive, loud ultrasonication processes
+\item Impractical in an industrial setting
+\begin{itemize}
+\item Cost
+\item Operating volume (very loud)
+\item Cooling requirements 
+\item Exotic solvents, bioincompatible chemistry
+\end{itemize} 
+\item Further research required to develop new dispersion techniques. Aim for:
+\begin{itemize}
+\item Same property improvements
+\item Reduced processing requirements
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Graphene Fillers: In Detail}
+
+\begin{frame}{Graphene Fillers in Detail}
+  \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=.9\textwidth]{tensile strength}
+  \end{center}
+  \caption[Tensile strength improvements for graphene nanocomposites]{Tensile tests and theory}
+\end{figure}
+        \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+     \begin{block}{}
+\begin{itemize}
+\item Significant current research interest in graphene fillers
+\item May outperform existing nanocomposites
+\item Processing costs similar or perhaps reduced 
+\end{itemize}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{AFM Images of Graphene}
+\begin{figure}
+  \centering
+    \includegraphics[width=.9\textwidth]{afm}
+    \caption[Tapping-mode AFM images of functionalized graphene]{Atomic force microscope images showing a plan-view of functionalized graphene. (a) is ordinary functionalized graphene, (b) is a proprietary (somewhat thicker) modified graphene. The inset images show cross-sectional height changes.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Graphene Fillers in Detail}
+  \begin{columns}[T]
+      \begin{column}{\textwidth}
+     \begin{block}{}
+\begin{itemize}
+\item Graphene's strength and stiffness were characterized by nanoindentation of suspended graphene membranes in 2008
+\begin{itemize}
+\item Elastic modulus of defect-free samples = 1 TPa
+\item Ultimate strength was determined to be 130 GPa at an ultimate strain of nearly 25\% \cite{lee2008measurement} 
+\item Corresponding to the intrinsic stress-strain behavior of the carbon-carbon bonds 
+\item Strongest material ever measured by man
+\end{itemize}
+\end{itemize}
+    \end{block}      
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Early Graphene Experiments}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=.9\textwidth]{graphene fd}
+  \end{center}
+  \caption[Tensile strength improvements for graphene nanocomposites]{(A) shows force-displacement curves for graphene. (B) shows stress and deflection against dimensionless distance}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Graphene vs. Other Fullerenes}
+\begin{itemize}
+\item Graphene fillers have been shown to outperform carbon nanotube fillers for fracture resistance and other mechanical property improvements by 20-30\% at weight fractions as low as .1\% \cite{njuguna2007epoxy, rafiee_enhanced_2009,rafiee_fracture_2010}
+\item Gains attributed to graphene's high specific surface area.
+\item Wear reductions of an order of magnitude have been shown in graphene-loaded composites  \cite{kandanur_suppression_2012,shen2014tribological} 
+\item Wear reductions accompanied by:
+\begin{itemize}
+\item Fine wear debris
+\item Improved transfer films from highly-loaded samples
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Graphene fillers for other property improvements}
+  \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+    \begin{block}{}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{storage modulus}
+  \end{center}
+  \caption[Tensile strength improvements for graphene nanocomposites]{Viscoelastic onset temperature can be altered by graphene loading and cure parameters}
+\end{figure}
+        \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+     \begin{block}{}
+\begin{itemize}
+\item Exotic methods have been found to improve unusual properties of graphene loaded composites
+\item Can alter viscoelastic limit onset temperature via UV exposure cure. \cite{MartinGallego20114664}
+\end{itemize}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item Significant mechanical improvements have been shown in graphene composites 
+
+\item Graphene-oxide fillers at low weight percentages reduce specific wear rates of epoxy materials by around 90\% when compared to neat epoxies \cite{shen_significantly_2013,li2013control} \item Wear behavior of unfunctionalized graphene nanocomposites is not well understood
+\item Interference of graphene with debris generation in the epoxy system?
+\end{itemize}
+\end{frame}
+
+\section{Conclusions}
+
+\begin{frame}{Conclusions}
+\begin{itemize}
+\item Microscale fillers have long been known to cause measureable triboperformance increases
+\begin{itemize}
+\item Friction
+\item Wear
+\item Mechanical Properties
+\end{itemize}
+
+\item Recent research has demonstrated that nanoscale fillers can improve properties further still
+
+\item Polymer tribology is dominated by transfer films and viscoelastic effects.
+
+\item Fullerene composite fillers may improve triboproperties by transfer film promotion and interference with debris generation
+
+\item Graphene often outperforms other forms of nanoscale carbon as a filler
+\end{itemize}
+\end{frame}
+
+\section{References}
+\begin{frame}[allowframebreaks]{References}
+\bibliography{nanocomposites}
+\end{frame}
+
+
+\end{document}
